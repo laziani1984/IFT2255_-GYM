@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Prototype Java">
+    <archive path="C:/UdeM/TP3-2255/imp1/Implementation/Prototype 2/out/artifacts/Prototype2_jar/Prototype Java.jar" />
+  </library>
+  <library name="Python 3.8 interpreter library" />
+</eclipse-userlibraries>
+

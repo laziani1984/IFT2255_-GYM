@@ -1,0 +1,1158 @@
+<html>
+
+<head>
+	<title>IFT2255 A19 DM1</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+		* { font-family : Open Sans, Tahoma, Verdana }
+
+		body { background-color : #222; }
+
+		#main {
+			width : 80%;
+			margin : auto;
+			margin-top : 25px;
+			margin-bottom : 25px;
+			padding : 25px;
+			background-color : #fff;
+			border : 2px solid rgba(0,0,0,0);
+			border-radius : 5px;
+		}
+
+		h1 { text-align : center; }
+		h2 { margin : 30px 0px; }
+
+		table {
+			border : outset 2px black;
+			border-collapse : collapse;
+		}
+		th { border-bottom : double 2px black; }
+		td { border-bottom : solid 1px black; }
+		.first_col { border-right : double 2px black; }
+
+
+		#infosGenerales {
+			line-height : 25px;
+		}
+
+		hr { margin : 40px 0px 30px 0px; }
+
+		img { width : 100%; }
+
+		li { margin : 25px 0px; }
+		#task1 li {
+			margin : 5px 0px;
+			list-style-type : none;
+		}
+
+		#hypotheses li, #task4 li, #task6 li {
+			margin : 5px 0px;
+		}
+
+		.motGras { font-weight : bold; }
+
+		#divCasUtilisations {
+			display : flex;
+			flex-direction : row;
+			flex-wrap : wrap;
+		}
+
+		#divCasUtilisations div {
+			width : 30%;
+			background-color : #FAFAFF;
+			border : 1px #999 solid;
+			border-radius : 5px;
+			padding : 10px;
+			margin : 4px;
+			line-height : 25px;
+		}
+
+
+		#divCasUtilisations .casUtilisationsDM2 {
+			background-color : #d1edff;
+		}
+
+		#legendeDM2 {
+			width : 30%;
+			border : 1px #999 solid;
+			border-radius : 5px;
+			background-color : #d1edff;
+			padding : 10px;
+			margin : 0px 4px 24px 4px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+
+		<div>
+			<h1>IFT 2255 - Automne 2019<br>Devoir 1 - Rapport</h1>
+
+
+			<h2>Informations générales</h2>
+
+			<div id="infosGenerales">
+				<p>
+					<span class="motGras">Nom : </span>Lannie Dinh<br>
+					<span class="motGras">Matricule : </span>9792<br>
+					<span class="motGras">Courriel : </span>lannie.dinh@umontreal.ca<br>
+					<span class="motGras">Temps mis : </span>2h (diagramme) / 1h (structure rapport)/ 1.5h (glossaire) / 3h (CU)
+				</p>
+
+				<p>
+					<span class="motGras">Nom : </span>Niko Kwok Hiu Fung<br>
+					<span class="motGras">Matricule : </span>6286<br>
+					<span class="motGras">Courriel : </span>niko.kwok.hiu.fung@umontreal.ca<br>
+					<span class="motGras">Temps mis : </span>1h30 (mis en page html) / 9h (implémentation) / 2h (CU)
+				</p>
+
+				<p>
+					<span class="motGras">Nom : </span>Wael Abou Ali<br>
+					<span class="motGras">Matricule : </span>4365<br>
+					<span class="motGras">Courriel : </span>wael.abou.ali@umontreal.ca<br>
+					<span class="motGras">Temps mis : </span>2h (risques) / 2.5h (exigences) / 2h (CU) / 1h (hypothèse).
+				</p>
+			</div>
+
+
+			<h2>Distribution des tâches</h2>
+			<p><span class="motGras">Soumissionaire : </span>Niko Kwok Hiu Fung</p>
+
+			<table cellpadding="7px">
+				<thead>
+					<tr>
+						<th class="first_col">Tâche</th>
+						<th>Lannie</th>
+						<th>Niko</th>
+						<th>Wael</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td class="first_col">Glossaire</td>
+						<td>100%</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="first_col">Diagramme de cas d'utilisation</td>
+						<td>100% </td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="first_col">Cas d'utilisation</td>
+						<td>35%</td>
+						<td>35%</td>
+						<td>30%</td>
+					</tr>
+					<tr>
+						<td class="first_col">Risques</td>
+						<td></td>
+						<td></td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td class="first_col">Exigences non-fonctionnelles</td>
+						<td></td>
+						<td></td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td class="first_col">Implémentation</td>
+						<td></td>
+						<td>100%</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<br>
+			<span>Voici un <a href="ressources/DM1_stats_bitbucket.PNG">lien</a> vers les statistiques Bitbucket</span>
+			<br>
+			<br>			
+			<img src="ressources/DM1_stats_bitbucket.PNG" alt="Statistiques Bitbucket">
+			<br>
+			<br>			
+			<img src="ressources/DM1_punchcard_bitbucket.png" alt="Statistiques Bitbucket">
+					
+		</div>
+
+
+		<hr>
+
+
+		<div id="hypotheses">
+			<h2>Hypothèses</h2>
+
+			<p>Nous avons supposé que l'agent de #GYM pourrait offir 5 catégories de services:
+				<ol>
+					<li>Gérer accès:<ul>
+						<li>Adhérer au #GYM.</li>
+						<li>Suspendre un membre (une idée pour le futur mais pas mentionné dans le tp).</li>
+					</ul> </li>
+					<li>Valider accès(c'est une étape importante pour valider l'accès avant de réaliser les activités suivantes) : <ul>
+						<li>Accéder au #GYM : c'est sûr que nous aurons besoins de valider le numéro de membre avant d'y accéder au #GYM<./li>
+						<li>Vérifier une inscription : le client doit donner son numéro de membre pour vérifier sa validité avant de vérifier si le client est inscrit dans une séance ou pas.</li>
+						<li>S'inscrire dans une séance : Aussi c'est obligatoire de vérifier la validité du membre avant de s'inscrire.</li>
+						<li>Confirmer présence à une séance.</li>
+						<li>Créer une séance : Pour un professionnel, il faut donner son numéro de membre pour le vérifier et lui créer la séance désirée.</li>
+						<li>Consulter les inscriptions dans une séance.</li>
+						<li>Supprimer une séance : Ce n'est pas mentionné dans le tp mais ça pourrait être comme une possibilité au futur.</li>
+					</ul> </li>
+					<li>Gérer les inscriptions:<ul>
+						<li>Vérifier une inscription.</li>
+						<li>S'inscrire dans une séance.</li>
+						<li>Confirmer présence à une séance.</li>
+					</ul> </li>
+					<li>Rechercher une séance(Cette étape est importante pour obtenir la séance qu'on cherche pour la traiter):<ul>
+						<li>Vérifier une inscription.</li>
+						<li>s'inscrire à une séance.</li>
+						<li>Confirmer présence à une séance.</li>
+						<li>Consulter des inscriptions dans une séance.</li>
+						<li>Créer une nouvelle séance.</li>
+						<li>Supprimer une séance.</li>
+					</ul> </li>
+					<li>Gérer les séances:<ul>
+						<li>Consulter les inscriptions dans une séance.</li>
+						<li>Créer une séance.</li>
+						<li>Supprimer une séance.</li>
+					</ul> 
+				</ol><hr style="border-top : dotted 3px;" />
+				<ol><u>Les démarches en bref seront:</u> 
+					<li>le client se présente au comptoir.</li>
+					<li>L'agent lui demande comment il pourrait lui aider aujourd'hui.</li> 
+					<li>L'agent amène le choix du client au menu principal du logiciel.</li>
+					<li>Les étapes de vérification seront faites.</li>
+					<li>Si la vérification est invalide, le client sera bloqué de réaliser sa demande.</li>
+					<li>Si c'est valide, l'agent affirme le membre que sa demande est traitée avec succès.</li>
+					<li>Si le membre veut y accéder au #GYM l'agent lui ouvre le tourniquet ou s'il veut un autre service l'agent remet le logiciel à la page principal pour commencer avec un nouveau choix.</li>
+					<li>Si le membre a terminé sa demande, l'agent remet le logiciel à son état intial pour aider un nouveau client.</li></ol></p>
+				</div>
+
+				<hr>
+
+				<div id="task1">
+					<h2>Tâche 1 : Glossaire</h2>
+
+					<ul>
+						<li><span class="motGras">#GYM : </span> un centre sportif qui offre des services pour différentes activités physiques, dont une salle de machines, une piscine, des séances d'entraînement et de consultations avec des professionnels.</li>
+						<li><span class="motGras">Adhérer : </span> devenir membre du #GYM (client et professionnel).</li>
+						<li><span class="motGras">Agent : </span> employé du gym qui gère, via le Centre de Données, les opérations en lien avec les membres (les clients et les professionnels).</li>
+						<li><span class="motGras">Centre de Données : </span> logiciel, système central qui contient toutes les informations des membres et des professionnels et qui permet de faire des opérations particulières.</li>
+						<li><span class="motGras">Client : </span> personne adhérée au #GYM pour les services qu'il fournit.</li>
+						<li><span class="motGras">Code de membre : </span> synonyme de numéro de membre.</li>
+						<li><span class="motGras">Code de service : </span> numéro unique de 7 chiffres associé à un service offert par un professionnel.</li>
+						<li><span class="motGras">Compte : </span> Espace regroupant les informations personnelles du membre/professionnel dans le centre de données.</li>
+						<li><span class="motGras">Inscription : </span> action du client de s’inscrire à une séance donnée par un professionnel.</li>
+						<li><span class="motGras">Membre : </span> une personne adhérée au #GYM qui a accès à ses services (client et professionel).</li>
+						<li><span class="motGras">Numéro de membre : </span> numéro unique associé à un membre.</li>
+						<li><span class="motGras">Professionnel : </span> personne adhérée au #GYM offrant des services aux clients du #GYM, tel que des entraînements et des consultations.</li>
+						<li><span class="motGras">Requête : </span> demande envoyée d’un système à un autre.</li>
+						<li><span class="motGras">Réception du centre : </span> endroit où se trouve l’agent du #GYM et où se font les operations en lien avec les clients et les professionnels.</li>
+						<li><span class="motGras">Répertoire des Services : </span> espace dans le Centre de Données regroupant l'ensemble des services offerts par les professionels et les séances disponibles pour le jour même.</li>
+						<li><span class="motGras">Service : </span> activité offerte par un professionnel, soit une consultation ou un entraînement.</li>
+						<li><span class="motGras">Système central : </span> Centre de Données.</li>
+						<li><span class="motGras">Séance : </span> un entraînement ou une consultation avec un professionnel issu d'un service qu'il offre à un moment spécifique (jour et heure).</li>
+						<li><span class="motGras">Tourniquet du centre : </span> endroit géré par l'agent par lequel le membre/professionnel passe pour avoir accès au #GYM.</li>
+						<li><span class="motGras">Visite : </span> action de se rendre au #GYM pour utiliser ses services.</li>
+					</ul>
+				</div>
+
+				<hr>
+
+				<div id="task2">
+					<h2>Tâche 2 : Diagramme des cas d'utilisation</h2>
+					<span>Voici un <a href="ressources/DM1_tache2_v1.JPG">lien</a> vers le diagramme</span>			
+					<img src="ressources/DM1_tache2_v1.JPG" alt="Diagramme de CU">	
+				</div>
+						
+				
+
+				<hr>
+
+				<div id="task3">
+
+					<h2>Tâche 3 : Cas d'utilisation</h2>
+
+					<div id="legendeDM2">Les CU avec un fond bleu ont été ajoutés lors du DM2</div>
+
+					<div id="divCasUtilisations">
+
+						<div>
+							<span class="motGras">Cas d'utilisation : </span>Adhérer au #GYM<br>
+							<span class="motGras">But : </span>Créer un compte membre et recevoir un numéro de membre pour avoir accès au #GYM.<br>
+							<span class="motGras">Préconditions : </span><br>
+								a. Avoir toutes les informations et données nécessaires pour adhérer à #GYM.<br>
+							<span class="motGras">Acteurs : </span>Client ou professionel (principal), agent (secondaire).<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. Le futur membre se présente la réception et demande à l'agent d'adhérer au gym.<br>
+								2. L'agent ouvre le menu principal et choisi "Adhérer au #GYM" parmi la liste des choix.<br>
+								3. L'agent demande les informations nécessaires au futur membre.<br>
+								4. Le futur membre donne ses informations à l'agent.<br>
+								5. L'agent entre ces informations dans le Centre de Données à partir de son ordinateur.<br>
+								6. L'agent demande au client de payer les frais d'admission.<br>
+								7. Aller au cas "payer les frais du #GYM".<br>
+								8. Le Centre de Données crée le nouveau membre et lui et assigne un numéro de membre.<br>
+								9. L'agent ouvre le tourniquet.<br>
+								10. Le membre accède au gym.<br>
+							</p>
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								6a.1 Le logiciel affiche sur l'écran de l'agent que les données sont invalides<br>
+								6a.2 L'agent invite le client à re-vérifier ses données.<br>
+								6a.3 Retourne à l'étape 3.<br>
+								7a.1 Le tourniquet est en panne.<br>
+								7a.2 L'agent ne peut pas ouvrir le tourniquet au membre.<br>
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+								a. Le client/professionnel est désormais un membre du #GYM et possède un numéro de membre.<br>
+								b. Le logiciel sera remis à la page initial pour servir la prochaine personne.
+						</div>
+
+
+						<div>
+							<span class="motGras">Cas d'utilisation : </span>Valider accès au #GYM<br>
+							<span class="motGras">But : </span>Vérifer si le membre est un membre actif ou non, et si oui, lui donner accès au gym par le tourniquet de la réception.<br>
+							<span class="motGras">Préconditions : </span><br>
+								a. S'être préalablement inscrit au centre et donc avoir un numéro de membre.<br>
+							<span class="motGras">Acteurs : </span>Membre (principal), Agent (secondaire).<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. Le membre se présente la réception et demande à accéder au #GYM.<br>
+								2. L'agent demande au membre son numéro de membre.<br>
+								3. Le membre donne son numéro de membre à l'agent.<br>
+								4. L'agent entre le numéro de membre du client dans le Centre de Données pour validation.<br>
+								5. Le numéro de membre est trouvé et validé, ce qui fait apparaître "Validé" sur son écran.<br>
+							</p>
+
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								5a.1 Le Centre de données ne trouve pas le numéro de membre.<br>
+								5a.2 La raison "Numéro invalide" est affichée sur son écran.<br>
+								5a.3 L'agent invite le client à s'inscrire au #GYM.<br>
+								5a.4 Le client décide qu'il va s'inscrire au #GYM.<br>
+								5a.5 Le client va commencer les démarches d'inscription(voir cas principal(nouvelle inscription)).<br>
+								5a.6 Le client et l'agent vont à travers les démarches d'une nouvelle inscription(Aller au CU "adhérer au #GYM").<br>
+								5a.7 Le membre décide s'il veut rentrer au #GYM, quitter ou faire un autre choix.<br>
+								5a.5a.1 Le client décide ne pas s'abonner au #GYM.<br>
+								5a.5a.2 L'agent refuse l'accès au gym au membre.<br>
+								5b.1 Le Centre de données trouve le numéro de membre, mais celui-ci est suspendu.<br>
+								5b.2 La raison "Membre suspendu" est affichée sur son écran.<br>
+								5b.3 L'agent informe le client que son inscription au #GYM est suspendu.<br>
+								5b.4 Le membre décide de renouveller son abonnement.<br>
+								5b.5 Aller au CU "payer les frais du #GYM".<br>
+								5b.6 Le logiciel change l'état du membre en "Actif" au lieu de "suspendu".<br>
+								5b.8 Retourne à l'étape 5.
+								5b.5a Retourne à l'étape 5a.5a.1.
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+								a. Le membre a vérifié son statut et il pourrait accéder au #GYM et faire toute activité dans le centre.<br>
+								b. Le logiciel sera remis à la page initial pour recevoir le prochain membre.
+
+						</div>
+
+
+						<div class="casUtilisationsDM2">
+							<span class="motGras">Cas d'utilisation : </span>payer les frais du #GYM<br>
+							<span class="motGras">But : </span>Le client veut payer les frais dus sur son compte.<br>
+							<span class="motGras">Préconditions : </span><br>
+								a. Le membre a validé son accès et il se trouve des montants à payer sur son compte.<br>
+							<span class="motGras">Acteurs : </span>Membre (principal), Agent (secondaire).<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. L'agent demande au client/membre comment il va payer.<br>
+								2. Le membre donne à l'agent les détails de sa méthode de paiment afin d'effectuer un paiment valide.<br>
+								3. Le logiciel autorise la transaction.<br>
+							</p>
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								3a.1 Le système indique que la méthode de paiment n'est pas valide.<br>
+								3a.2 Le client change la méthode de paiment.<br>
+								3a.3 Retourne à l'étape 2.<br>
+								3a.2a.1 L'agent indique au client qu'il a créé son compte en attendant qu"il paye les frais d'inscriptipn pour lui assigner son numéro unique.<br>
+								3a.2a.2 L'agent refuse l'accès au gym au membre.<br>
+							</p>
+							<span class="motGras">Postconditions : </span>
+								a. Le membre a payé tous les frais dû sur son compte et il pourrait continuer les démarches de sa demande maintenant.<br> 
+						</div>
+
+
+						<div>
+							<span class="motGras">Cas d'utilisation : </span>S'inscrire à une séance<br>
+							<span class="motGras">But : </span>Le client veut s'inscrire à une des séances de service disponibles.<br>
+							<span class="motGras">Préconditions : </span><br>
+								a. S'être préalablement inscrit au centre et donc avoir un numéro de membre.<br>
+							<span class="motGras">Acteurs : </span>Client (principal), agent (secondaire).<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. Le client demande de l'agent de l'aider avec sa demande.<br>
+								2. L'agent ouvre le menu principal et applique le bon choix parmi la liste des choix.<br>
+								3. À partir du Répertoire des service, l'agent montre au client les services offerts par le centre.<br>
+								4. Dès que le membre choisi un service parmi les choix, le système affiche les séances du service choisi.<br>
+								5. Le client choisit une séance.<br>
+								6. L'agent sélectionne la séance choisie.<br>
+								7. Aller au cas "Confirmer une inscription".<br>
+								8. L'agent affirme au client qu'il est maintenant inscrit à la séance.<br>
+								9. Le client décide s'il veut accéder au #GYM.<br>
+								10. L'agent ouvre le tourniquet du centre.<br>
+							</p>
+
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								4a.1 Le client ne voit pas de service qui l'intéresse.<br>
+								4a.2 Le client décide d'accéder au #GYM seulement.<br>
+								4a.3 Aller au cas "Valider accès au #GYM".<br>
+								9a.1 Le client décide de ne pas accéder au #GYM.<br>
+								9a.2 L'agent n'ouvre pas le tourniquet du centre et le client s'en va.<br>
+								8b.1 Le client décide de demander une autre chose à l'agent.<br>
+								8b.2 L'agent remet l'écran à la page de menu pour la liste de choix.<br>
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+							a. Le client est maintenant inscrit à la séance qu'il a choisi.<br> 	
+							b. Le logiciel sera remis à la page initial pour recevoir un prochain membre.
+						</div>
+
+
+						<div>
+							<span class="motGras">Cas d'utilisation : </span>Confirmer une inscription<br>
+							<span class="motGras">But : </span>Confirmer l'inscription d'un membre à une séance qu'il a choisi.<br>
+							<span class="motGras">Préconditions : </span><br>
+								a. Le client est dans le cas "S'inscrire à une séance" : il s'est présenté à l'agent à la réception et il a choisi une séance qui l'intéresse et cette dernière a été sélectionée par l'agent dans le logiciel.<br>
+								b. Le client a son numéro de membre.<br>
+							<span class="motGras">Acteurs : </span>Client (principal), Agent (secondaire).<br>
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. L'agent séléctionne "Confirmer inscription".<br>
+								2. L'agent demande au client son numéro de membre.<br>
+								3. Le client donne son numéro de membre.<br>
+								4. L'agent entre le numéro du client dans le Centre de Données.<br>
+								5. 
+								5. Le logiciel crée un enregistrement sur le disque. Les données suivantes seront enregistrées sur le disque : date et heure actuelles, date à laquelle le service qui sera fourni, numéro du professionnel, numéro du membre, code du service et les commentaires s'il y en a.<br>
+							</p>
+
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								4a.1 Le numéro du client est invalide.<br>
+								4a.2 Retourner à l'étape 2.<br>
+								4b.1 Le système affiche que le client est un membre suspendu.<br>
+								4b.2 L'agent retourne à l'écran d'accueil du logiciel et le client s'en va.<br>
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+								a. La confirmation de l'inscription du client à la séance est maintenant réalisée.<br> 
+								b. Le logiciel sera remis à la page initial pour recevoir un prochain membre.
+						</div>
+
+
+						<div>
+							<span class="motGras">Cas d'utilisation : </span>Confirmer présence à une séance<br>
+							<span class="motGras">But : </span>Confirmer la présence à une séance (avant qu'elle ne commence) d'un client à laquelle il s'est inscrit au préalable.<br>
+							<span class="motGras">Préconditions :</span>
+								a. Le client s'est inscrit à la séance.<br>
+								b. Le client se présente à l'agent à la réception avant le début de la séance.<br> 
+							<span class="motGras">Acteurs : </span>Client (principal), agent (secondaire).<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. Le client demande de l'agent de l'aider avec sa demande.<br>
+								2. L'agent ouvre le menu principal et applique le bon choix parmi la liste des choix.<br>
+								3. Aller au cas "Rechercher une séance".<br>
+								4. L'agent sélectionne la séance trouvée.<br>
+								5. L'agent sélectionne Confirmer inscription.<br>
+								6. Aller au cas Vérifier une inscription.<br>
+								7. La validité de l'inscription est vérifiée.<br>
+								8. La présence du client à la séance est confirmée.
+							</p>
+
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								3a.1 La séance n'est pas trouvée.<br>
+								3a.2 Le client ne peut pas confirmer sa présence ni assister à la séance. L'accès à la séance lui est refusée.<br> 
+								7a.1 L'inscription du client n'est pas trouvée.<br>
+								7a.2 Aller à l'Étape 3a.2.
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+								a. Le client a maintenant confirmé sa présence pour la séance et il est admissible à y assister.<br>
+								b. Le logiciel crée un enregistrement sur le disque contenant les champs : 
+								Date et Heure actuelles, Numéro du professionel, Numéro du membre, Code du service, Commentaires (c'est la confirmation à l'avance que le service a été fournit).<br>
+								c. Le logiciel sera remis à la page initial pour recevoir un prochain membre.
+						</div>
+
+
+						<div>
+							<span class="motGras">Cas d'utilisation : </span>Rechercher une séance<br>
+							<span class="motGras">But : </span>Trouver une séance disponible dans le Répertoire de Services à partir d'un code de service<br>
+							<span class="motGras">Préconditions :</span>
+								a. Le client possède le code d'un service.<br>
+								b. Le client doit se présenter à la réception afin d'être servi.<br>
+							<span class="motGras">Acteurs : </span>Client (principal), Agent (secondaire).<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. L'agent demande le code de service au client.<br> 
+								2. Le client donne le code de service dont lequel il y a la séance dont il veut confirmer sa présence.<br>
+								3. L'agent lance une requête au Répertoire des Services avec ce code.<br>
+								4. Le Répertoire des Services liste les séance disponibles pour ce service.<br>
+								5. L'agent trouve la séance recherchée.
+							</p>
+
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								3a.1 Le code de service donné par le client est invalide.<br>
+								3a.2 Vérifier le code de service donné par le client.<br>
+								3a.3 Retourner à l'Étape 1.<br>
+								5a.1 L'agent ne trouve pas la bonne séance recherchée par le client.<br>
+								5a.2 Aller à l'étape 3a.2.<br>
+								5a.2a.1 La séance n'existe pas.
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+								L'agent trouve la séance recherchée pour le client et on continue le cas Confirmer présence à une séance.
+						</div>
+
+
+						<div>
+							<span class="motGras">Cas d'utilisation :</span> Vérifier une inscription<br>
+							<span class="motGras">But :</span> Vérifier que le client est bel et bien inscrit à une séance trouvée dans le Répertoire des Services.<br>
+							<span class="motGras">Préconditions : </span><br>
+								a. Le client s'est présenté à l'agent à la réception pour confirmer sa présence à une séance.<br>
+								b. L'agent a trouvé la séance à laquelle le client s'est inscrit.<br>
+								c. L'agent vient de sélectionner Confirmer inscription de la séance.<br>
+								d. Le client connaît son numéro de membre.<br>
+
+							<span class="motGras">Acteurs : </span>Client (principal), agent (secondaire).<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. Le client donne son numéro de membre à l'agent.<br>
+								2. L'agent envoie une requête avec ce numéro au Centre de Données.<br>
+								3. Le Centre de Données renvoie un message disant que l'inscription est valide. (le mot Validé apparaît à l'écran)                      
+							</p>
+
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								3a.1 Le Centre de Données renvoie un message disant que l'inscription est invalide. (le mot Validé n'apparaît pas à l'écran).<br>
+								3a.2 Vérifier le numéro du client.<br>
+								3a.3 Retourner à l'Étape 2.<br>
+								3a.2a.1 Retourner à l'Étape 3a.2 du cas Rechercher une séance.<br>
+								3a.2b.1 Le client ne s'était pas inscrit à cette séance. 
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+								L'inscription du client à une séance est vérifiée et on continue le cas Confirmer présence à une séance.
+						</div>
+
+
+						<div>
+							<span class="motGras">Cas d'utilisation : </span>Création d'une séance<br>
+							<span class="motGras">But : </span>Créer une séance de service qui sera offerte aux clients du #GYM.<br>
+							<span class="motGras">Préconditions : </span><br>
+								a. Le professionel est un membre du #GYM.<br>
+								b. Le professionnel doit se présenter à la réception.<br>
+							<span class="motGras">Acteurs : </span>Professionnel (principal), agent (secondaire).<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. Le professionnel demande à l'agent de l'aider avec sa demande.<br>
+								2. L'agent ouvre le menu principal et applique le bon choix parmi la liste des choix.<br>
+								3. L'agent demande pour quel service il veut créer une séance.<br>
+								4. L'agent sélectionne le service choisi et demande le numéro de membre du professionnel.<br>
+								5. Le professionnel s'exécute.<br>
+								6. L'agent envoie les informations nécessaires au Centre de Données.<br>
+								7. La séance est créée.
+							</p>
+
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								4a.1 C'est un nouveau professionnel, il n'a pas de numéro de membre.<br> 
+								4a.2 Aller au cas "Adhérer au #GYM".<br>
+								4a.3 Retourner à l'étape 3.<br> 
+								5a.1 L'agent reçoit un message sur l'écran que c'est ne pas possible de créer la séance indiquée.<br>
+								5a.2 L'agent peut voir les commentaires pour savoir quel est l'erreur.<br>
+								5a.3 Retourner à l'étape 3 en demandant de changer les informations pour avoir une création valide selon les commentaires reçus.
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+								a. La séance est maintenant créée dans le système et fait partie du Répertoire des Services
+								et les clients peuvent s'y inscrire.<br> 
+								b.Le logiciel sera remis à la page initial pour recevoir un prochain membre.
+						</div>
+
+
+						<div class="casUtilisationsDM2">
+							<span class="motGras">Cas d'utilisation : </span>Création d'un service<br>
+							<span class="motGras">But : </span>Créer un service qui sera offerte aux clients du #GYM<br>
+							<span class="motGras">Préconditions : </span><br>
+								a. Le professionel est un membre du #GYM<br>
+								b. Le professionnel doit se présenter à la réception<br>
+							<span class="motGras">Acteurs : </span>Professionnel (principal), agent (secondaire)<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. Le professionnel demande à l'agent de l'aider avec sa demande<br>
+								2. L'agent ouvre le menu principal et applique le bon choix parmi la liste des choix<br>
+								3. L'agent demande le numéro de membre du professionnel<br>
+								4. Le numéro est est valide<br>
+								5. L'agent demande au professionnel les informations nécessaires<br>
+								6. Le professionnel s'exécute<br>
+								7. Les informations nécessaires à la création du service sont valides<br>
+								8. L'agent envoie les informations au Centre de Données<br>
+								9. Le service est créé.
+							</p>
+
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								4.a. Le numéro est invalide<br>
+								4.b. Le professionnel doit vérifier son numéro<br>
+								4.c. Retour à 3<br>
+								7.a. Les informations sont incorrects<br>
+								7.b. Le professionnel doit vérifier les informations<br>
+								7.c. Retour à 5
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+								a. Le service est maintenant créé dans le système et fait partie du Répertoire des Services<br>
+								b. et les clients peuvent s'inscrire aux séances de ce service<br> 
+								c. Le logiciel sera remis à la page initial pour recevoir un prochain membre.
+						</div>
+
+
+						<div>
+							<span class="motGras">Cas d'utilisation : </span>Consulter des inscriptions<br>
+							<span class="motGras">But : </span>Permettre au professionel de voir les inscriptions des clients aux séances qu'il offre.<br>
+							<span class="motGras">Préconditions : </span><br>
+								a. Le professionel est un membre du #GYM.<br>
+								b. Le professionel offre des séances (il en a créé).<br>  
+								c. Le professionnel doit se présenter à la réception.<br>
+							<span class="motGras">Acteurs : </span>Professionnel (principal), agent (secondaire).<br>
+
+							<span class="motGras">Scénario principal : </span>
+							<p>
+								1. Le professionnel demande à l'agent de l'aider avec sa demande.<br>
+								2. L'agent ouvre le menu principal et applique le bon choix parmi la liste des choix.<br>
+								3. Le professionnel donne son numéro de membre.<br>
+								4. L'agent envoie une requête au Centre de Données.<br>
+								5. Le Centre de Données renvoie la liste des inscriptions aux séances du professionnel.<br>	
+							</p>
+
+							<span class="motGras">Scénarios alternatifs : </span>
+							<p>
+								5a.1 Le Centre de Données indique que le numéro de membre n'existe pas.<br>
+								5a.2 Le professionnel vérifie et redonne un bon numéro.<br>
+								5a.3 Retourner à l'étape 4<br>
+								5b.1 Le centre de Données renvoie rien car il n'y aucune inscription.
+							</p>
+
+							<span class="motGras">Postconditions : </span>
+								a. Le professionnel obtient la liste des inscriptions à ses séances.<br> 
+								b.Le logiciel sera remis à la page initial pour recevoir un prochain membre.<br>
+						</div>
+
+					</div>
+
+				</div>
+
+				<hr>
+
+				<div id="task4">
+					<h2>Tâche 4 : Risques</h2>
+					<ul>
+						<p><li><span class="motGras">Risques de planification</span><br></p>
+							<u>Ce sont des risques qui ont un impact direct sur la réalisation du projet et donc ils sont liés à(au) :</u>
+							<ul>
+								<li>La livraison/déploiement du programme.</li>
+								<li>Temps nécessaire pour terminer le projet.</li>
+								<li>La réalisation du projet au temps convenu.</li>
+								<u><b>Exemples :</b></u>	
+								<ul>	
+									<li>Une fausse estimation du temps.</li>
+									<li>Compréhension superficielle des complexités du projet.</li>
+									<li>Expansion inattendue de la portée du projet.</li>
+									<li>Mauvaise allocation des ressources.</li>
+								</ul>		
+							</ul>
+						</li>
+
+						<li><p><span class="motGras">Risques budgétaires / financiers</span><br></p>
+							<u>Ce sont les risques associés à des dépassements de budget, par exemple :</u>
+							<ul>
+								<li>Mauvaise estimation budgétaire.</li>
+								<li>Dépassements de coûts dus à la sous-utilisation des ressources.</li>
+								<li>Mauvais suivi des finances.</li>
+								<li>Les retards de projets peuvent également avoir certains coûts de pénalité associés.</li>
+							</ul>
+						</li>
+
+						<li><p><span class="motGras">Risques opérationnels / procéduraux</span><br></p>
+							<u>Ce sont les risques associés aux activités opérationnelles quotidiennes du projet :</u>
+							<ul>
+								<li>Manque de formation suffisante.</li>
+								<li>Manque de clarté dans les responsabilités.</li>
+								<li>Absence d'esprit d'équipe.</li>
+								<li>Priorités contradictoires.</li>
+								<li>Mauvaise mise en œuvre du processus.</li>
+								<li>Rupture des communications.</li>
+							</ul>
+						</li>
+
+						<li><p><span class="motGras">Risques techniques / fonctionnels / de performance</span><br></p>
+							<u>Ce sont les risques associés aux fonctionnalités du logiciel ou à ses performances :</u>
+							<ul>
+								<li>réduire les fonctionnalités du logiciel pour compenser les dépassements budgétaires excessifs et les dépassements d'horaire.</li>
+								<li>Pas assez des tests sur les logiciels afin de respecter les dates de livraison.</li>
+								<li>Les développeurs doivent constamment trouver le meilleur compromis entre fonctionnalités optimales du logiciel et performances optimales.</li>
+							</ul>
+						</li>
+
+						<li><p><span class="motGras">Autres risques inévitables</span><br></p>
+							<ul>
+								<li>Changements de politique gouvernementale.</li>
+								<li>Le vieillissement(Obsolescence) des logiciels due à la nouvelle technologie d'une entreprise concurrente.</li>
+								<li>Perte de contrats à cause de changements chez les clients.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<hr>
+
+				<div id="task5">
+					<h2>Tâche 5 : Exigences non-fonctionnelles</h2>
+
+					<ul>
+						<li><span class="motGras">Sécurité</span><br>
+							Le logiciel doit être bien sécurisé pour ne pas donner l'accès à quelqu'un qui n'est pas inscrit au service.
+						</li>
+
+
+						<li><span class="motGras">Courtoisie</span><br>
+							Le temps de réponse du logiciel doit être assez rapide pour bien servir un taux élevée de clients qui se présente au comptoir simultanément.
+						</li>
+
+
+						<li><span class="motGras">Multilinguisme</span><br>
+							Puisque on se trouve dans une société bilingue alors on doit offrir le service avec ces deux langues(anglais, français) au minimum. Si le gym a un projet long-terme de diffuser ailleur donc le logiciel doit se préparer pour accepter d'autres langues.
+						</li>
+
+
+						<li><span class="motGras">Interactivité</span><br>
+							L'interactivité du logiciel va diminuer le temps de traitment des requêtes. Aussi, cette interactivité va augmenter le sentiment de plaisance chez les agents qui vont servir les clients au comptoir.
+						</li>
+
+
+						<li><span class="motGras">Maintenance</span><br>
+							Le coût de maintenance du logiciel va clairement diminuer si l'architecture du logiciel a été bien créée. Le logiciel doit être aussi créé de sorte qu'il sera ouvert aux changements proposés par la direction.
+						</li>
+						<li><span class="motGras">Stockage de masse</span><br>
+							Le matériel assigné au stockage de masse du serveur doit être bien calculé pour stocker tous les fichiers des membres attendus au centre. 
+						</li>
+						<li><span class="motGras">Fiabilité</span><br>
+							Le logiciel doit être capable de traiter les requêtes des clients avec un taux élevé de succès. Il est supposé aussi de ne pas tomber en panne lors de l'établissement de la connexion avec la base de données.
+							Donc le logiciel doit être toujours connecté à la base de données et prêt à servir les clients. 
+						</li>
+					</ul>
+				</div>
+
+				<hr>
+
+				<div id="task6">
+					<h2>Tâche 6 : Prototype en Java</h2>
+					<p>
+						Dans le dossier <i>prototype1</i> du projet Eclipse :<br>
+						<ul>
+							<li>classe <i>client</i><br></li>
+							<li>classe <i>GYM</i> (classe principale)<br></li>
+							<li>classe <i>inscription</i><br></li>
+							<li>classe <i>membre</i><br></li>
+							<li>classe <i>professionel</i><br></li>
+							<li>classe <i>seance</i></li>
+							<li>classe <i>service</i></li>
+						</ul>
+
+						GYM.jar
+					</p>
+				</div>
+
+				<div>
+			<h1>IFT 2255 - Automne 2019<br>Devoir 2 - Rapport</h1>
+
+
+			<h2>Informations générales</h2>
+
+			<div id="infosGenerales">
+				<p>
+					<span class="motGras">Nom : </span>Lannie Dinh<br>
+					<span class="motGras">Matricule : </span>9792<br>
+					<span class="motGras">Courriel : </span>lannie.dinh@umontreal.ca<br>
+					<span class="motGras">Temps mis : </span>6
+				</p>
+
+				<p>
+					<span class="motGras">Nom : </span>Niko Kwok Hiu Fung<br>
+					<span class="motGras">Matricule : </span>6286<br>
+					<span class="motGras">Courriel : </span>niko.kwok.hiu.fung@umontreal.ca<br>
+					<span class="motGras">Temps mis : </span>
+				</p>
+
+				<p>
+					<span class="motGras">Nom : </span>Wael Abou Ali<br>
+					<span class="motGras">Matricule : </span>4365<br>
+					<span class="motGras">Courriel : </span>wael.abou.ali@umontreal.ca<br>
+					<span class="motGras">Temps mis : </span>
+				</p>
+			</div>
+
+
+			<h2>Distribution des tâches</h2>
+			<p><span class="motGras">Soumissionaire : </span>Niko Kwok Hiu Fung</p>
+
+			<table cellpadding="7px">
+				<thead>
+					<tr>
+						<th class="first_col">Tâche</th>
+						<th>Lannie</th>
+						<th>Niko</th>
+						<th>Wael</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td class="first_col">Analyse</td>
+						<td>0</td>
+						<td>0</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td class="first_col">Diagramme d'activité UML</td>
+						<td>20</td>
+						<td>20</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td class="first_col">Diagramme de classe UML</td>
+						<td>0</td>
+						<td>0</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td class="first_col">Diagrammes de séquence UML</td>
+						<td>60</td>
+						<td>20</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td class="first_col">Évolution du prototype</td>
+						<td>0</td>
+						<td>0</td>
+						<td>100</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+
+		<hr>
+
+
+		<div id="task1">
+			<h2>Tâche 1 : Analyse</h2>
+
+			<ul>
+				<li>
+					<span class="motGras">Quelles parties seront informatisées et comment ?</span><br>
+					<ol>
+						<li>La procédure comptable principale(Production des rapports) qui contient:
+							<ul>
+								<li>Les fichiers TEF.</li>
+								<li>Le rapport de synthèse envoyé au gérant.</li>
+							</ul>
+							<li>Un script s'exécutera chaque semaine avec des formules prédéterminés pour produire des rapports à partir des données collectées.</li>
+							<li>La gestion des données stockés, avec le logiciel qui s’occupe des interactions avec la base de données.</li>
+						</ol>
+					</li>
+					
+					<li>
+						<span class="motGras">Où seront stockées les données ?</span><br>Les données seront stockées dans la base de données.
+					</li>
+
+					<li>
+						<span class="motGras">Quel matériel sera nécessaire ?</span><br>
+
+						<ol>
+							<li>Un ou plusieurs ordinateurs de bureaux.</li>
+							<li>Un disque(stocker les rapports/fichiers).</li>
+							<li>Un serveur(contenant le centre des données).</li>
+							<li>Des imprimantes(imprimer les rapports selon besoin).</li>
+						</ol>
+
+						<li>
+							<span class="motGras">Comment le système #GYM que vous développez interagira avec les autres systèmes ?</span><br>L'interaction se fait par l'intermédiaire de la base de données.
+						</li>
+
+						<li>
+							<span class="motGras">Comment les utilisateurs interagiront avec le système ?</span><br>Les utilisateurs auront recours à des terminaux pour interagir avec le système.
+						</li>
+						
+						<li>
+							<span class="motGras">Un total de 107 mots.</span>
+						</li>
+					</li>
+				</ul>
+			</div>
+
+
+			<hr>
+
+
+			<div id="task2">
+				<h2>Tâche 2 : Diagramme d'activité UML</h2>
+				
+				<a class="lienDiagramme" href="ressources/AD - Cas principal.jpg" target="_">Diagramme d'activité - Cas principal</a>
+				<img src="ressources/AD - Cas principal.jpg" alt="AD - Cas principal">
+				
+				<hr>
+
+				<a class="lienDiagramme" href="ressources/AD - Gérer membre.jpg" target="_">Diagramme d'activité - Gérer membre</a>
+				<img src="ressources/AD - Gérer membre.jpg" alt="AD - Gérer membre">
+				
+				<hr>
+
+				<a class="lienDiagramme" href="ressources/AD - Gérer un service.jpg" target="_">Diagramme d'activité - Gérer un service</a>
+				<img src="ressources/AD - Gérer un service.jpg" alt="AD - Gérer un service">
+				
+				<hr>
+
+				
+				<a class="lienDiagramme" href="ressources/AD - Inscription à une séance.jpg" target="_">Diagramme d'activité - Inscription à une séance</a>
+				<img src="ressources/AD - Inscription à une séance.jpg" alt="AD - Inscription à une séance">
+				
+				<hr>
+
+				<a class="lienDiagramme" href="ressources/AD - Confirmer présence à une séance.jpg" target="_">Diagramme d'activité - Confirmer présence à une séance</a>
+				<img src="ressources/AD - Confirmer présence à une séance.jpg" alt="AD - Confirmer présence à une séance">
+				
+				<hr>
+
+				<a class="lienDiagramme" href="ressources/AD - Procédure comptable.jpg" target="_">Diagramme d'activité - Procédure comptable</a>
+				<img src="ressources/AD - Procédure comptable.jpg" alt="AD - Procédure comptable">
+			</div>
+
+
+			<hr>
+
+
+			<div id="task3">
+				<h2>Tâche 3 : Diagramme de classe UML</h2>
+
+				- Prototype :<br>
+				<img src="ressources/CD - Prototype.jpg" alt="Prototype Class Diagram"><br>
+				- Diagramme de Classe : <br>
+				<img src="ressources/CD - GYM.jpg" alt="Class Diagram"><br>
+				
+			</div>
+
+
+			<hr>
+
+
+			<div id="task4">
+				<h2>Tâche 4 : Diagrammes de séquence UML</h2>
+				
+				<a class="lienDiagramme" href="ressources/SD - Gérer(Membre et service).jpg" target="_">Diagramme de séquence DS - Gérer(Membre et service).jpg</a>
+				<img src="ressources/SD - Gérer(Membre et service).jpg" alt="DS - Gérer(Membre et service).jpg">
+
+				<hr>
+
+				<a class="lienDiagramme" href="ressources/DS - Inscription à une séance.jpg" target="_">Diagramme de séquence DS - Inscription à une séance.jpg</a>
+				<img src="ressources/DS - Inscription à une séance.jpg" alt="DS - Inscription à une séance">
+				
+				<hr>
+
+				<a class="lienDiagramme" href="ressources/DS - Confirmer Inscription.jpg" target="_">Diagramme de séquence DS - Confirmer Inscription.jpg</a>
+				<img src="ressources/DS - Confirmer Inscription.jpg" alt="DS - Confirmer Inscription">
+				
+				<hr>
+
+				<a class="lienDiagramme" href="ressources/SD - Consulter inscriptions.jpg" target="_">Diagramme de séquence DS - Consulter inscriptions.jpg</a>
+				<img src="ressources/SD - Consulter inscriptions.jpg" alt="DS - Consulter inscriptions.jpg">
+				
+				<hr>
+
+				<a class="lienDiagramme" href="ressources/DS - Procédure Comptable.jpg" target="_">Diagramme de séquence DS - Procédure Comptable.jpg</a>
+				<img src="ressources/DS - Procédure Comptable.jpg" alt="DS - Procédure Comptable">
+
+				<hr>
+
+				<a class="lienDiagramme" href="ressources/SD - Valider membre.jpg" target="_">Diagramme de séquence DS - Valider membre.jpg</a>
+				<img src="ressources/SD - Valider membre.jpg" alt="DS - Valider membre.jpg">
+				
+				<hr>
+
+			</div>
+
+			<div id="task5">
+				<h2>Tâche - : Statistiques</h2>
+				<p>
+
+					<a class="lienDiagramme" href="ressources/DM2_stats_bitbucket.PNG" target="_">Statistique - DM2_stats_bitbucket.PNG</a>
+					<img src="ressources/DM2_stats_bitbucket.PNG" alt="DM2_stats_bitbucket">
+
+					<hr>
+
+					<a class="lienDiagramme" href="ressources/DM2_punchcard_bitbucket.png" target="_">Statistique - DM2_punchcard_bitbucket.png</a>
+					<img src="ressources/DM2_punchcard_bitbucket.png" alt="DM2_punchcard_bitbucket">
+
+					<hr>
+
+				</p>
+			</div>
+
+			<div id="task5">
+				<h2>Tâche 5 : Évolution du prototype en Java</h2>
+				<p>
+					Dans le dossier <i>Implementation</i> :<br>
+					<ul>
+						Prototype Java.jar<br><br>
+					</ul>
+					<a class="lienDiagramme" href="ressources/javajar.jpg" target="_">Image de fichier JAR en fonction</a>
+					<img src="ressources/javajar.jpg" alt="javajar">
+
+					<hr>
+				</p>
+			</div>
+		</div>
+
+		<div id="main">
+
+		<div>
+			<h1>IFT 2255 - Automne 2019<br>Devoir 1 - Rapport</h1>
+
+
+			<h2>Informations générales</h2>
+
+			<div id="infosGenerales">
+				<p>
+					<span class="motGras">Nom : </span>Lannie Dinh<br>
+					<span class="motGras">Matricule : </span>9792<br>
+					<span class="motGras">Courriel : </span>lannie.dinh@umontreal.ca<br>
+					<span class="motGras">Temps mis : </span>
+				</p>
+
+				<p>
+					<span class="motGras">Nom : </span>Niko Kwok Hiu Fung<br>
+					<span class="motGras">Matricule : </span>6286<br>
+					<span class="motGras">Courriel : </span>niko.kwok.hiu.fung@umontreal.ca<br>
+					<span class="motGras">Temps mis : </span>
+				</p>
+
+				<p>
+					<span class="motGras">Nom : </span>Wael Abou Ali<br>
+					<span class="motGras">Matricule : </span>4365<br>
+					<span class="motGras">Courriel : </span>wael.abou.ali@umontreal.ca<br>
+					<span class="motGras">Temps mis : </span>60 h en total.
+				</p>
+			</div>
+
+
+			<h2>Distribution des tâches</h2>
+			<p><span class="motGras">Soumissionaire : </span>Niko Kwok Hiu Fung</p>
+
+			<table cellpadding="7px">
+				<thead>
+					<tr>
+						<th class="first_col">Tâche</th>
+						<th>Lannie</th>
+						<th>Niko</th>
+						<th>Wael</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td class="first_col">Implémentation en Java</td>
+						<td></td>
+						<td></td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td class="first_col">Tests unitaires</td>
+						<td></td>
+						<td></td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td class="first_col">Livraison et documentation</td>
+						<td></td>
+						<td></td>
+						<td>100%</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="task1">
+			<h2>Tâche 1 : Implémentation en Java</h2>
+
+			finalGYM.jar
+
+		</div>
+
+		<div id="task2">
+			<h2>Tâche 2 : Tests unitaires</h2>
+
+			<br>
+			<br>			
+			<img src="ressources/tests.PNG" alt="Statistiques Bitbucket">
+
+		</div>
+
+		<div id="task3">
+			<h2>Tâche 2 : Livraison et documentation</h2>
+			<p>
+				Le manuel d'utilisateur est présent dans le fichier dans un dossier contenant le nom manuel utilisateur.
+			</p>
+			<p>
+				finalGYM.jar ---> jar executable.
+			</p>
+		</div>>
+
+		<hr>
+
+		<div id="task5">
+			<h2>Tâche - : Statistiques</h2>
+			<p>
+				<br>
+				<br>
+				<span>Voici un <a href="ressources/contributorsFinal.PNG">lien</a> vers les statistiques Bitbucket</span>
+				<br>
+				<br>			
+				<img src="ressources/contributorsFinal.PNG" alt="Statistiques Bitbucket">
+				<br>
+				<br>			
+				<img src="ressources/punchCardFinal.PNG" alt="Statistiques Bitbucket">
+				<br>
+				<br>			
+				<img src="ressources/commitsFinal.PNG" alt="Statistiques Bitbucket">
+			</p>
+
+		</div>
+
+	</main>
+</body>
